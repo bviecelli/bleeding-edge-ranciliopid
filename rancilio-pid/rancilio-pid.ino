@@ -1760,6 +1760,7 @@ void InitOTA() {
   if (ota && !forceOffline) {
     // TODO: OTA logic has to be refactored so have clean setup() and loop() parts
     // wifi connection is done during blynk connection
+    ArduinoOTA.setMdnsEnabled(true);
     ArduinoOTA.setHostname(hostname); //  Device name for OTA
     ArduinoOTA.setPassword(OTApass); //  Password for OTA
     ArduinoOTA.setRebootOnSuccess(true); // reboot after successful update 

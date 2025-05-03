@@ -220,7 +220,7 @@ void printMultiToggleConfig() {
   int multi_toggle_2[] = MULTI_TOGGLE_2_GPIOS;
   int multi_toggle_3[] = MULTI_TOGGLE_3_GPIOS;
   int* multi_toggle;
-  int len;
+  int len = -1;
   char* action;
   for (int element = 1; element <= 3; element++) {
     switch (element) {
